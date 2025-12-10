@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KMC FC | Kinondoni Municipal Council Football Club | Tanzanian Premier League</title>
+    <meta name="description" content="Official website of KMC Football Club - Tanzania's most exciting football team. Get live scores, player profiles, tickets, and exclusive content.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kmcfc.co.tz">
+    <meta property="og:title" content="KMC Football Club - Pride of Kinondoni">
+    <meta property="og:description" content="Experience the passion of Tanzanian football with KMC FC's official website.">
+    <meta property="og:image" content="https://kmcfc.co.tz/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kmcfc.co.tz">
+    <meta property="twitter:title" content="KMC Football Club - Pride of Kinondoni">
+    <meta property="twitter:description" content="Experience the passion of Tanzanian football with KMC FC's official website.">
+    <meta property="twitter:image" content="https://kmcfc.co.tz/images/twitter-image.jpg">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF6B00">
+    
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="club-crest">
+                <div class="crest-circle"></div>
+                <div class="crest-k">K</div>
+                <div class="crest-m">M</div>
+                <div class="crest-c">C</div>
+            </div>
+            <div class="loading-text">
+                <span>Loading Passion</span>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Whatsapp Button -->
+    <a href="https://wa.me/255629384806?text=Hi%20KMC%20FC%20Team!" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Top Alert Bar -->
+    <div class="alert-bar">
+        <div class="alert-content">
+            <span class="live-indicator"></span>
+            <span class="alert-text">NEXT MATCH: KMC FC vs Yanga SC | Saturday 3:00 PM | National Stadium</span>
+            <a href="fixtures.html#tickets" class="alert-button">GET TICKETS</a>
+        </div>
+        <button class="alert-close">&times;</button>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-animated">
+                        <div class="logo-shield">
+                            <div class="shield-inner">
+                                <span class="logo-k">K</span>
+                                <span class="logo-m">M</span>
+                                <span class="logo-c">C</span>
+                            </div>
+                        </div>
+                        <div class="logo-text">
+                            <h1 class="logo-title">KMC FOOTBALL CLUB</h1>
+                            <p class="logo-subtitle">Kinondoni Municipal Council</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <ul class="menu-list">
+                    <li class="menu-item active"><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#"><i class="fas fa-users"></i> TEAM <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="team.html#first-team"><i class="fas fa-shield-alt"></i> First Team</a>
+                            <a href="team.html#players"><i class="fas fa-user-friends"></i> Players</a>
+                            <a href="team.html#staff"><i class="fas fa-clipboard-list"></i> Technical Staff</a>
+                            <a href="team.html#academy"><i class="fas fa-graduation-cap"></i> Youth Academy</a>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="fixtures.html"><i class="fas fa-calendar-alt"></i> FIXTURES</a></li>
+                    <li class="menu-item"><a href="news.html"><i class="fas fa-newspaper"></i> NEWS</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#"><i class="fas fa-crown"></i> FANS <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="fans.html#membership"><i class="fas fa-id-card"></i> Membership</a>
+                            <a href="fans.html#merchandise"><i class="fas fa-tshirt"></i> Merchandise</a>
+                            <a href="fans.html#events"><i class="fas fa-calendar-star"></i> Events</a>
+                            <a href="fans.html#gallery"><i class="fas fa-images"></i> Gallery</a>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+                    <li class="menu-item highlight"><a href="fixtures.html#tickets"><i class="fas fa-ticket-alt"></i> TICKETS</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <a href="fans.html#shop" class="btn-shop">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="fans.html#membership" class="btn-membership">BECOME A MEMBER</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-header">
+            <div class="mobile-logo">KMC FC</div>
+            <button class="mobile-close">&times;</button>
+        </div>
+        <div class="mobile-content">
+            <!-- Mobile menu content will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Hero Section with Parallax -->
+    <section class="hero-section">
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero/stadium.jpg');">
+                    <div class="slide-content">
+                        <div class="match-badge">NEXT MATCH</div>
+                        <h2 class="slide-title">KMC FC vs YANGA SC</h2>
+                        <div class="match-details">
+                            <div class="match-info">
+                                <div class="match-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>Saturday, March 25, 2024</span>
+                                </div>
+                                <div class="match-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>15:00 EAT</span>
+                                </div>
+                                <div class="match-venue">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>National Stadium, Dar es Salaam</span>
+                                </div>
+                            </div>
+                            <div class="countdown-timer">
+                                <div class="timer-unit">
+                                    <span class="number" id="days">00</span>
+                                    <span class="label">DAYS</span>
+                                </div>
+                                <div class="timer-unit">
+                                    <span class="number" id="hours">00</span>
+                                    <span class="label">HOURS</span>
+                                </div>
+                                <div class="timer-unit">
+                                    <span class="number" id="minutes">00</span>
+                                    <span class="label">MINUTES</span>
+                                </div>
+                                <div class="timer-unit">
+                                    <span class="number" id="seconds">00</span>
+                                    <span class="label">SECONDS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="fixtures.html#tickets" class="btn-ticket">
+                                <i class="fas fa-ticket-alt"></i> GET TICKETS
+                            </a>
+                            <a href="fixtures.html#livestream" class="btn-live">
+                                <i class="fas fa-tv"></i> WATCH LIVE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero/team-celebration.jpg');">
+                    <div class="slide-content">
+                        <div class="match-badge">LATEST VICTORY</div>
+                        <h2 class="slide-title">KMC FC 3 - 1 SIMBA SC</h2>
+                        <div class="victory-stats">
+                            <div class="stat">
+                                <span class="stat-value">65%</span>
+                                <span class="stat-label">POSSESSION</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">15</span>
+                                <span class="stat-label">SHOTS</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">ON TARGET</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">GOALS</span>
+                            </div>
+                        </div>
+                        <p class="slide-description">A dominant performance at home that moves us to 3rd place in the league!</p>
+                        <a href="news.html#match-report" class="btn-highlight">MATCH REPORT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero/fans.jpg');">
+                    <div class="slide-content">
+                        <div class="match-badge">FAN ZONE</div>
+                        <h2 class="slide-title">JOIN THE BLUE & ORANGE ARMY</h2>
+                        <p class="slide-description">Become an official member and enjoy exclusive benefits, discounts, and behind-the-scenes access.</p>
+                        <div class="membership-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-percentage"></i>
+                                <span>20% Discount on Merch</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Priority Ticket Access</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-star"></i>
+                                <span>Meet & Greet Events</span>
+                            </div>
+                        </div>
+                        <a href="fans.html#membership" class="btn-primary">JOIN NOW <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">TROPHIES WON</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number" data-count="127">0</div>
+                    <div class="stat-label">LEAGUE GOALS</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number" data-count="25000">0</div>
+                    <div class="stat-label">ACTIVE FANS</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">YEARS HISTORY</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Players -->
+    <section class="featured-players">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">STAR PLAYERS</h2>
+                <p class="section-subtitle">Meet our top performers this season</p>
+                <a href="team.html" class="section-link">VIEW FULL SQUAD <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="players-grid">
+                <!-- Player 1 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/players/player1.jpg" alt="John Mwamba" loading="lazy">
+                        <div class="player-number">10</div>
+                        <div class="player-position">Forward</div>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">John Mwamba</h3>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">15</span>
+                                <span class="stat-label">Goals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">Assists</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">24</span>
+                                <span class="stat-label">Matches</span>
+                            </div>
+                        </div>
+                        <div class="player-nationality">
+                            <img src="images/flags/tanzania.svg" alt="Tanzania" class="flag">
+                            <span>Tanzania</span>
+                        </div>
+                        <a href="team.html#player10" class="player-profile">VIEW PROFILE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Player 2 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/players/player2.jpg" alt="David Omondi" loading="lazy">
+                        <div class="player-number">1</div>
+                        <div class="player-position">Goalkeeper</div>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">David Omondi</h3>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">Clean Sheets</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">45</span>
+                                <span class="stat-label">Saves</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">24</span>
+                                <span class="stat-label">Matches</span>
+                            </div>
+                        </div>
+                        <div class="player-nationality">
+                            <img src="images/flags/kenya.svg" alt="Kenya" class="flag">
+                            <span>Kenya</span>
+                        </div>
+                        <a href="team.html#player1" class="player-profile">VIEW PROFILE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Player 3 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/players/player3.jpg" alt="Rashid Yusuf" loading="lazy">
+                        <div class="player-number">8</div>
+                        <div class="player-position">Midfielder</div>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Rashid Yusuf</h3>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">5</span>
+                                <span class="stat-label">Goals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">14</span>
+                                <span class="stat-label">Assists</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">92%</span>
+                                <span class="stat-label">Pass Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="player-nationality">
+                            <img src="images/flags/tanzania.svg" alt="Tanzania" class="flag">
+                            <span>Tanzania</span>
+                        </div>
+                        <a href="team.html#player8" class="player-profile">VIEW PROFILE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Player 4 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/players/player4.jpg" alt="Michael Adebayo" loading="lazy">
+                        <div class="player-number">4</div>
+                        <div class="player-position">Defender</div>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Michael Adebayo</h3>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">85%</span>
+                                <span class="stat-label">Tackle Success</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">120</span>
+                                <span class="stat-label">Clearances</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">Goals</span>
+                            </div>
+                        </div>
+                        <div class="player-nationality">
+                            <img src="images/flags/nigeria.svg" alt="Nigeria" class="flag">
+                            <span>Nigeria</span>
+                        </div>
+                        <a href="team.html#player4" class="player-profile">VIEW PROFILE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest-news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">LATEST NEWS</h2>
+                <p class="section-subtitle">Stay updated with KMC FC</p>
+                <a href="news.html" class="section-link">VIEW ALL NEWS <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="news-grid">
+                <!-- Main Featured News -->
+                <div class="featured-news">
+                    <article class="news-card large">
+                        <div class="news-image">
+                            <img src="images/news/featured-news.jpg" alt="New Signing Announcement" loading="lazy">
+                            <div class="news-category">TRANSFER NEWS</div>
+                            <div class="news-date">
+                                <span class="day">15</span>
+                                <span class="month">MAR</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">KMC FC Signs Brazilian Winger Marcos Silva</h3>
+                            <p class="news-excerpt">The club is delighted to announce the signing of Brazilian winger Marcos Silva from Fluminense. The 24-year-old has signed a 3-year contract and will join the team immediately.</p>
+                            <div class="news-meta">
+                                <span class="author"><i class="fas fa-user"></i> Club Secretary</span>
+                                <span class="comments"><i class="fas fa-comment"></i> 45 Comments</span>
+                            </div>
+                            <a href="news.html#article1" class="read-more">READ FULL STORY <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Side News -->
+                <div class="side-news">
+                    <!-- News 2 -->
+                    <article class="news-card small">
+                        <div class="news-image">
+                            <img src="images/news/news2.jpg" alt="Youth Academy" loading="lazy">
+                            <div class="news-category">ACADEMY</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Youth Team Wins Regional Championship</h3>
+                            <p class="news-excerpt">Our U-19 team clinched the regional championship with a stunning 4-0 victory in the finals.</p>
+                            <div class="news-meta">
+                                <span class="time"><i class="far fa-clock"></i> 2 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News 3 -->
+                    <article class="news-card small">
+                        <div class="news-image">
+                            <img src="images/news/news3.jpg" alt="Community Service" loading="lazy">
+                            <div class="news-category">COMMUNITY</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Players Visit Local Schools in Kinondoni</h3>
+                            <p class="news-excerpt">First team players spent the afternoon inspiring young students at local schools.</p>
+                            <div class="news-meta">
+                                <span class="time"><i class="far fa-clock"></i> 1 day ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News 4 -->
+                    <article class="news-card small">
+                        <div class="news-image">
+                            <img src="images/news/news4.jpg" alt="Sponsorship" loading="lazy">
+                            <div class="news-category">SPONSORSHIP</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">New Partnership with CRDB Bank</h3>
+                            <p class="news-excerpt">KMC FC announces 3-year partnership deal with CRDB Bank as official financial partner.</p>
+                            <div class="news-meta">
+                                <span class="time"><i class="far fa-clock"></i> 2 days ago</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixtures & Results -->
+    <section class="fixtures-section">
+        <div class="container">
+            <div class="fixtures-header">
+                <h2 class="section-title">FIXTURES & RESULTS</h2>
+                <div class="fixtures-tabs">
+                    <button class="tab-button active" data-tab="upcoming">UPCOMING</button>
+                    <button class="tab-button" data-tab="results">RESULTS</button>
+                    <button class="tab-button" data-tab="standings">STANDINGS</button>
+                </div>
+            </div>
+
+            <div class="fixtures-content">
+                <!-- Upcoming Matches -->
+                <div class="tab-content active" id="upcoming">
+                    <div class="match-card">
+                        <div class="match-date">
+                            <div class="date-day">SAT</div>
+                            <div class="date-number">25</div>
+                            <div class="date-month">MAR</div>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team home">
+                                <img src="images/teams/kmc.png" alt="KMC FC">
+                                <span>KMC FC</span>
+                            </div>
+                            <div class="match-info">
+                                <div class="match-time">15:00</div>
+                                <div class="match-venue">National Stadium</div>
+                                <div class="match-competition">Tanzanian Premier League</div>
+                            </div>
+                            <div class="team away">
+                                <img src="images/teams/yanga.png" alt="Yanga SC">
+                                <span>Yanga SC</span>
+                            </div>
+                        </div>
+                        <div class="match-actions">
+                            <a href="fixtures.html#tickets" class="btn-ticket-small">TICKETS</a>
+                            <a href="#" class="btn-reminder">SET REMINDER</a>
+                        </div>
+                    </div>
+
+                    <!-- More matches would be loaded here -->
+                </div>
+
+                <!-- Results -->
+                <div class="tab-content" id="results">
+                    <!-- Recent results would be shown here -->
+                </div>
+
+                <!-- Standings -->
+                <div class="tab-content" id="standings">
+                    <div class="standings-table">
+                        <!-- League table would be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">OUR PARTNERS</h2>
+                <p class="section-subtitle">Proudly sponsored by industry leaders</p>
+            </div>
+
+            <div class="sponsors-grid">
+                <div class="sponsor-tier">
+                    <h3 class="tier-title">MAIN PARTNER</h3>
+                    <div class="sponsor main">
+                        <img src="images/sponsors/crdb.png" alt="CRDB Bank" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="sponsor-tier">
+                    <h3 class="tier-title">OFFICIAL PARTNERS</h3>
+                    <div class="sponsors-group">
+                        <div class="sponsor">
+                            <img src="images/sponsors/tigo.png" alt="Tigo" loading="lazy">
+                        </div>
+                        <div class="sponsor">
+                            <img src="images/sponsors/pepsi.png" alt="Pepsi" loading="lazy">
+                        </div>
+                        <div class="sponsor">
+                            <img src="images/sponsors/adidas.png" alt="Adidas" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">BE PART OF THE KMC FAMILY</h2>
+                <p class="cta-text">Join thousands of passionate fans supporting Tanzania's most exciting football club.</p>
+                <div class="cta-buttons">
+                    <a href="fans.html#membership" class="btn-cta-primary">
+                        <i class="fas fa-crown"></i> BECOME A MEMBER
+                    </a>
+                    <a href="contact.html" class="btn-cta-secondary">
+                        <i class="fas fa-envelope"></i> CONTACT US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Club Info -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="footer-shield">
+                                <span>KMC</span>
+                            </div>
+                            <div class="footer-logo-text">
+                                <h3>KMC FOOTBALL CLUB</h3>
+                                <p>Kinondoni Municipal Council</p>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Official football club of Kinondoni Municipal Council. Competing in the Tanzanian Premier League since 2009.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">QUICK LINKS</h4>
+                        <ul class="footer-links">
+                            <li><a href="team.html">First Team</a></li>
+                            <li><a href="fixtures.html">Fixtures & Tickets</a></li>
+                            <li><a href="news.html">News & Articles</a></li>
+                            <li><a href="fans.html#membership">Membership</a></li>
+                            <li><a href="fans.html#shop">Online Shop</a></li>
+                            <li><a href="about.html#stadium">Stadium Information</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">CONTACT US</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kinondoni Municipal Council,<br>Dar es Salaam, Tanzania</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+255 22 277 0000</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@kmcfc.co.tz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">NEWSLETTER</h4>
+                        <p class="newsletter-text">Subscribe to get latest news and updates directly to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KMC Football Club. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Use</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/homepage.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize hero slider
+            const heroSwiper = new Swiper('.hero-slider', {
+                direction: 'horizontal',
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+            });
+        });
+    </script>
+</body>
+</html>
