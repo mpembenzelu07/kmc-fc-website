@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMC FC - Our Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>KMC <span>FC</span></h1>
+                        <p>Kinondoni Municipal Council FC</p>
+                    </div>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="team.html" class="active"><i class="fas fa-users"></i> Team</a>
+                    <a href="fixtures.html"><i class="fas fa-calendar-alt"></i> Fixtures</a>
+                    <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                    <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="fans.html"><i class="fas fa-heart"></i> Fans</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                </nav>
+
+                <!-- Language & Mobile Menu -->
+                <div class="header-right">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="switchLanguage('sw')">SW</button>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TEAM HERO -->
+    <section class="hero" style="min-height: 70vh; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1575361204480-aadea25e6e68?q=80&w=2071');">
+        <div class="container">
+            <div class="hero-content">
+                <!-- English -->
+                <div class="content-en">
+                    <h1>Meet <span>Our Team</span></h1>
+                    <p>The talented players and dedicated staff driving KMC FC forward</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h1>Jukwaa la <span>Timu Yetu</span></h1>
+                    <p>Wachezaji wenye vipaji na wataalamu waliokabidhiwa kuendeleza KMC FC mbele</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLAYER FILTER -->
+    <section class="features" style="padding: 50px 0 0;">
+        <div class="container">
+            <div class="player-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="content-en">All Players</span>
+                    <span class="content-sw">Wachezaji Wote</span>
+                </button>
+                <button class="filter-btn" data-filter="goalkeeper">
+                    <span class="content-en">Goalkeepers</span>
+                    <span class="content-sw">Golikipa</span>
+                </button>
+                <button class="filter-btn" data-filter="defender">
+                    <span class="content-en">Defenders</span>
+                    <span class="content-sw">Walindaji</span>
+                </button>
+                <button class="filter-btn" data-filter="midfielder">
+                    <span class="content-en">Midfielders</span>
+                    <span class="content-sw">Wa kati</span>
+                </button>
+                <button class="filter-btn" data-filter="striker">
+                    <span class="content-en">Strikers</span>
+                    <span class="content-sw">Washambuliaji</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLAYERS GRID -->
+    <section class="features" style="padding: 50px 0 100px;">
+        <div class="container">
+            <div class="players-grid">
+                <!-- Player 1 - Goalkeeper -->
+                <div class="player-card" data-position="goalkeeper">
+                    <div class="player-photo">
+                        <i class="fas fa-user"></i>
+                        <div class="player-number">1</div>
+                    </div>
+                    <div class="player-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>John Magufuli</h3>
+                            <p class="position">Goalkeeper</p>
+                            <p class="stats">Age: 28 | Height: 1.88m</p>
+                            <p>Team captain with exceptional leadership skills and lightning-fast reflexes. Has kept 15 clean sheets this season.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>John Magufuli</h3>
+                            <p class="position">Golikipa</p>
+                            <p class="stats">Umri: 28 | Urefu: 1.88m</p>
+                            <p>Kapteni wa timu mwenye uongozi bora na viakisi vya kasi ya umeme. Amefunga mechi 15 bila kupata bao msimu huu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 2 - Defender -->
+                <div class="player-card" data-position="defender">
+                    <div class="player-photo">
+                        <i class="fas fa-user"></i>
+                        <div class="player-number">4</div>
+                    </div>
+                    <div class="player-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>David Chilunda</h3>
+                            <p class="position">Defender</p>
+                            <p class="stats">Age: 26 | Height: 1.85m</p>
+                            <p>Strong and reliable center-back with excellent tackling skills. Known for his aerial dominance and precise passing.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>David Chilunda</h3>
+                            <p class="position">Mlinzi</p>
+                            <p class="stats">Umri: 26 | Urefu: 1.85m</p>
+                            <p>Mlinzi hodari na anayeweza kutegemewa mwenye ujuzi bora wa kukamata. Anajulikana kwa udhibiti wake wa anga na kupitisha sahihi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 3 - Midfielder -->
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-photo">
+                        <i class="fas fa-user"></i>
+                        <div class="player-number">8</div>
+                    </div>
+                    <div class="player-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Michael Kambanga</h3>
+                            <p class="position">Midfielder</p>
+                            <p class="stats">Age: 24 | Height: 1.78m</p>
+                            <p>Creative playmaker with excellent vision and passing ability. Controls the tempo of the game and creates scoring opportunities.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Michael Kambanga</h3>
+                            <p class="position">Kiungo</p>
+                            <p class="stats">Umri: 24 | Urefu: 1.78m</p>
+                            <p>Mchezaji mwenye ubunifu mwenye uwezo bora wa kuona na kupitisha. Anadhibiti mwendo wa mchezo na kuunda fursa za kufunga.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 4 - Striker -->
+                <div class="player-card" data-position="striker">
+                    <div class="player-photo">
+                        <i class="fas fa-user"></i>
+                        <div class="player-number">9</div>
+                    </div>
+                    <div class="player-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Rajabu Athumani</h3>
+                            <p class="position">Striker</p>
+                            <p class="stats">Age: 25 | Height: 1.82m</p>
+                            <p>Top scorer with 15 goals this season. Known for his speed, precision finishing, and clinical ability in front of goal.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Rajabu Athumani</h3>
+                            <p class="position">Mshambuliaji</p>
+                            <p class="stats">Umri: 25 | Urefu: 1.82m</p>
+                            <p>Mfungaji bora wenye mabao 15 msimu huu. Anajulikana kwa kasi yake, usahihi wa kumalizia, na uwezo wa kimatibabu mbele ya goli.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 5 - Defender -->
+                <div class="player-card" data-position="defender">
+                    <div class="player-photo">
+                        <i class="fas fa-user"></i>
+                        <div class="player-number">3</div>
+                    </div>
+                    <div class="player-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Ali Mwinyi</h3>
+                            <p class="position">Defender</p>
+                            <p class="stats">Age: 27 | Height: 1.80m</p>
+                            <p>Versatile full-back who excels in both defense and attack. Provides width and dangerous crosses from the left flank.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Ali Mwinyi</h3>
+                            <p class="position">Mlinzi</p>
+                            <p class="stats">Umri: 27 | Urefu: 1.80m</p>
+                            <p>Mlinzi anayeweza kucheza nafasi nyingi ambaye anafanya vizuri katika ulinzi na shambulio. Hutoa upana na mikia hatari kutoka upande wa kushoto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 6 - Midfielder -->
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-photo">
+                        <i class="fas fa-user"></i>
+                        <div class="player-number">6</div>
+                    </div>
+                    <div class="player-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Juma Said</h3>
+                            <p class="position">Midfielder</p>
+                            <p class="stats">Age: 29 | Height: 1.84m</p>
+                            <p>Defensive midfielder who breaks up opposition attacks and starts counter-attacks. Known for his physical presence and accurate long passes.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Juma Said</h3>
+                            <p class="position">Kiungo</p>
+                            <p class="stats">Umri: 29 | Urefu: 1.84m</p>
+                            <p>Kiungo wa ulinzi ambaye anavunja mashambulizi ya mpinzani na kuanzisha mashambulizi ya kukabiliana. Anajulikana kwa uwepo wake wa kimwili na kupitisha marefu sahihi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COACHING STAFF -->
+    <section class="upcoming-match" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d);">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Coaching Staff</h2>
+                    <p>The masterminds behind our playing style and tactics</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Wataalamu wa Kocha</h2>
+                    <p>Wataalamu nyuma ya mtindo wetu wa kucheza na mikataba</p>
+                </div>
+            </div>
+
+            <div class="coaching-grid">
+                <div class="coach-card">
+                    <div class="coach-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="coach-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>John Mwamba</h3>
+                            <p class="coach-title">Head Coach</p>
+                            <p>Former professional player with 10 years of coaching experience. Specializes in tactical development and youth training.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>John Mwamba</h3>
+                            <p class="coach-title">Kocha Mkuu</p>
+                            <p>Mchezaji wa zamani wa kitaaluma mwenye uzoefu wa miaka 10 ya kocha. Mtaalamu katika maendeleo ya kimkakati na mafunzo ya vijana.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coach-card">
+                    <div class="coach-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="coach-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Sarah Juma</h3>
+                            <p class="coach-title">Assistant Coach</p>
+                            <p>Focuses on player development and match analysis. Brings fresh ideas and modern training techniques to the team.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Sarah Juma</h3>
+                            <p class="coach-title">Kocha Msaidizi</p>
+                            <p>Anazingatia maendeleo ya mchezaji na uchambuzi wa mechi. Analeta mawazo mapya na mbinu za kisasa za mafunzo kwenye timu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coach-card">
+                    <div class="coach-photo">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="coach-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Dr. Ahmed Hassan</h3>
+                            <p class="coach-title">Team Doctor</p>
+                            <p>Ensures player fitness and manages injuries. Has extensive experience in sports medicine and rehabilitation.</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Dk. Ahmed Hassan</h3>
+                            <p class="coach-title">Daktari wa Timu</p>
+                            <p>Anahakikisha afya ya wachezaji na kusimamia majeraha. Ana uzoefu mkubwa katika tiba ya michezo na urejeshaji.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM STATISTICS -->
+    <section class="features" style="padding: 100px 0;">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Team Statistics 2024</h2>
+                    <p>Our performance metrics for the current season</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Takwimu za Timu 2024</h2>
+                    <p>Vipimo vyetu vya utendaji kwa msimu wa sasa</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">
+                            <span class="content-en">Goals Scored</span>
+                            <span class="content-sw">Mabao Yaliyofungwa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">
+                            <span class="content-en">Clean Sheets</span>
+                            <span class="content-sw">Mechi Bila Bao</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">65%</div>
+                        <div class="stat-label">
+                            <span class="content-en">Win Rate</span>
+                            <span class="content-sw">Kiwango cha Ushindi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">22</div>
+                        <div class="stat-label">
+                            <span class="content-en">Players Used</span>
+                            <span class="content-sw">Wachezaji Waliotumika</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo Column -->
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>KMC <span>FC</span></h1>
+                            <p>Kinondoni Municipal Council FC</p>
+                        </div>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <p style="margin-top: 15px;">Representing Kinondoni with pride and passion in the Tanzanian Premier League.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <p style="margin-top: 15px;">Tunawakilisha Kinondoni kwa fahari na shauku katika Ligi Kuu ya Tanzania.</p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Viungo vya Haraka</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Home</span><span class="content-sw">Nyumbani</span></a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span class="content-en">About Club</span><span class="content-sw">Kuhusu Klabu</span></a></li>
+                        <li><a href="team.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Team Players</span><span class="content-sw">Wachezaji</span></a></li>
+                        <li><a href="fixtures.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Fixtures</span><span class="content-sw">Ratiba</span></a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Latest News</span><span class="content-sw">Habari Mpya</span></a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Contact Us</span><span class="content-sw">Wasiliana Nasi</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Contact Info</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Mawasiliano</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 
+                            <span class="content-en">Kinondoni Municipal Stadium</span>
+                            <span class="content-sw">Uwanja wa Manispaa wa Kinondoni</span>
+                        </li>
+                        <li><i class="fas fa-phone"></i> +255 22 277 4000</li>
+                        <li><i class="fas fa-envelope"></i> info@kmcfc.co.tz</li>
+                        <li><i class="fas fa-clock"></i> 
+                            <span class="content-en">Mon-Fri: 9:00 AM - 5:00 PM</span>
+                            <span class="content-sw">Jum-Ijum: 9:00 asubuhi - 5:00 jioni</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <!-- English -->
+                <div class="content-en">
+                    <p>&copy; 2024 KMC Football Club. All Rights Reserved. | Designed by <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <p>&copy; 2024 Klabu ya Mpira ya KMC. Haki zote zimehifadhiwa. | Imebuniwa na <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADDITIONAL STYLES FOR TEAM PAGE -->
+    <style>
+        .player-filter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 12px 25px;
+            background: var(--white);
+            border: 2px solid var(--gray);
+            border-radius: var(--border-radius);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--dark);
+        }
+        
+        .filter-btn.active {
+            background: var(--gradient-orange-blue);
+            color: var(--white);
+            border-color: var(--orange);
+            box-shadow: var(--shadow-orange);
+        }
+        
+        .filter-btn:hover:not(.active) {
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+        
+        .players-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .player-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .player-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .player-photo {
+            height: 300px;
+            background: var(--gradient-orange-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .player-photo i {
+            font-size: 6rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .player-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--white);
+            color: var(--orange);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .player-info {
+            padding: 25px;
+        }
+        
+        .player-info h3 {
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        .player-info .position {
+            color: var(--orange);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .player-info .stats {
+            color: var(--blue);
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .player-info p:last-child {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .coaching-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .coach-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: var(--transition);
+        }
+        
+        .coach-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--orange);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .coach-photo {
+            width: 100px;
+            height: 100px;
+            background: var(--gradient-orange-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2.5rem;
+            flex-shrink: 0;
+        }
+        
+        .coach-info h3 {
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+        
+        .coach-title {
+            color: var(--orange);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .coach-info p {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .stat-item {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .stat-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-orange-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+        
+        .stat-content .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--orange);
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .players-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .coach-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .stat-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Language Switcher
+        function switchLanguage(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(lang.toUpperCase()));
+            });
+            
+            // Switch content
+            if (lang === 'en') {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'none');
+                document.title = "KMC FC - Our Team [EN]";
+            } else {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'block');
+                document.title = "KMC FC - Timu Yetu [SW]";
+            }
+            
+            // Save preference
+            localStorage.setItem('kmc_lang', lang);
+        }
+
+        // Player Filter
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Filter players
+                const filter = this.dataset.filter;
+                const players = document.querySelectorAll('.player-card');
+                
+                players.forEach(player => {
+                    if (filter === 'all') {
+                        player.style.display = 'block';
+                    } else {
+                        if (player.dataset.position === filter) {
+                            player.style.display = 'block';
+                        } else {
+                            player.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Mobile Menu
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.innerHTML = this.innerHTML.includes('bars') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mainNav');
+            const btn = document.getElementById('mobileMenuBtn');
+            if (!nav.contains(e.target) && !btn.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                btn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // Load saved language
+        const savedLang = localStorage.getItem('kmc_lang') || 'en';
+        if (savedLang) {
+            switchLanguage(savedLang);
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.main-header');
+            if (window.scrollY > 100) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.padding = '20px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
