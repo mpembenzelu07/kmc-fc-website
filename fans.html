@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMC FC - Fans Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>KMC <span>FC</span></h1>
+                        <p>Kinondoni Municipal Council FC</p>
+                    </div>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="team.html"><i class="fas fa-users"></i> Team</a>
+                    <a href="fixtures.html"><i class="fas fa-calendar-alt"></i> Fixtures</a>
+                    <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                    <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="fans.html" class="active"><i class="fas fa-heart"></i> Fans</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                </nav>
+
+                <!-- Language & Mobile Menu -->
+                <div class="header-right">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="switchLanguage('sw')">SW</button>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FANS HERO -->
+    <section class="hero" style="min-height: 70vh; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=2067');">
+        <div class="container">
+            <div class="hero-content">
+                <!-- English -->
+                <div class="content-en">
+                    <h1>Fans <span>Zone</span></h1>
+                    <p>Join our passionate community of supporters and be part of the KMC FC family</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h1>Eneo la <span>Mashabiki</span></h1>
+                    <p>Jiunge na jamii yetu yenye shauku ya wafuasi na uwe sehemu ya familia ya KMC FC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BECOME A MEMBER -->
+    <section class="features" style="padding: 100px 0;">
+        <div class="container">
+            <div class="membership-section">
+                <div class="membership-content">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h2>Become an Official Member</h2>
+                        <p>Join thousands of passionate fans supporting KMC FC. As an official member, you'll enjoy exclusive benefits and be part of our journey to greatness.</p>
+                        
+                        <div class="benefits-list">
+                            <div class="benefit">
+                                <i class="fas fa-ticket-alt"></i>
+                                <div>
+                                    <h4>Priority Ticket Access</h4>
+                                    <p>Get early access to match tickets before general sale</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-gift"></i>
+                                <div>
+                                    <h4>Exclusive Merchandise</h4>
+                                    <p>Special discounts on official club merchandise</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <h4>Member Events</h4>
+                                    <p>Invitations to exclusive member-only events</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-newspaper"></i>
+                                <div>
+                                    <h4>Monthly Newsletter</h4>
+                                    <p>Exclusive updates and behind-the-scenes content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h2>Kuwa Mwanachama Rasmi</h2>
+                        <p>Jiunge na maelfu ya mashabiki wenye shauku wanaounga mkono KMC FC. Kama mwanachama rasmi, utafurahia faida za kipekee na kuwa sehemu ya safari yetu ya ukubwa.</p>
+                        
+                        <div class="benefits-list">
+                            <div class="benefit">
+                                <i class="fas fa-ticket-alt"></i>
+                                <div>
+                                    <h4>Ufikiaji wa Tiketi wa Kipaumbele</h4>
+                                    <p>Pata ufikiaji wa mapema wa tiketi za mechi kabla ya mauzo ya jumla</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-gift"></i>
+                                <div>
+                                    <h4>Bidhaa za Kipekee</h4>
+                                    <p>Punguzo maalum kwenye bidhaa za klabu</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <h4>Matukio ya Wanachama</h4>
+                                    <p>Mialiko kwa matukio ya kipekee ya wanachama pekee</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-newspaper"></i>
+                                <div>
+                                    <h4>Jarida la Kila Mwezi</h4>
+                                    <p>Visasisho vya kipekee na maudhui ya nyuma ya pazia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="membership-form-container">
+                    <div class="membership-form">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Join Now</h3>
+                            <p>Fill out the form to become an official member</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Jiunge Sasa</h3>
+                            <p>Jaza fomu kuwa mwanachama rasmi</p>
+                        </div>
+                        
+                        <form id="membershipForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Select Membership Type</option>
+                                    <option value="standard">Standard Member</option>
+                                    <option value="premium">Premium Member</option>
+                                    <option value="family">Family Membership</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span class="content-en">Become a Member</span>
+                                <span class="content-sw">Kuwa Mwanachama</span>
+                            </button>
+                        </form>
+                        
+                        <div class="membership-price">
+                            <div class="price">TZS 50,000<span>/year</span></div>
+                            <p class="price-note">
+                                <span class="content-en">Standard membership fee</span>
+                                <span class="content-sw">Ada ya kawaida ya uanachama</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAN DOWNLOADS -->
+    <section class="upcoming-match" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d);">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Fan Downloads</h2>
+                    <p>Official content for our passionate supporters</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Vipakuzi vya Mashabiki</h2>
+                    <p>Maudhui rasmi kwa wafuasi wetu wenye shauku</p>
+                </div>
+            </div>
+
+            <div class="downloads-grid">
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Wallpapers</h3>
+                        <p>Official KMC FC wallpapers for your devices</p>
+                        <a href="#" class="btn btn-outline">Download All</a>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Ukuta wa Skrini</h3>
+                        <p>Ukuta wa skrini rasmi wa KMC FC kwa vifaa vyako</p>
+                        <a href="#" class="btn btn-outline">Pakua Zote</a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Match Schedule</h3>
+                        <p>Printable PDF of our full match schedule</p>
+                        <a href="#" class="btn btn-outline">Download PDF</a>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Ratiba ya Mechi</h3>
+                        <p>PDF inayoweza kuchapishwa ya ratiba yetu kamili ya mechi</p>
+                        <a href="#" class="btn btn-outline">Pakua PDF</a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Club Anthem</h3>
+                        <p>Download our official club anthem and chants</p>
+                        <a href="#" class="btn btn-outline">Download MP3</a>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Wimbo wa Klabu</h3>
+                        <p>Pakua wimbo wetu rasmi wa klabu na nyimbo</p>
+                        <a href="#" class="btn btn-outline">Pakua MP3</a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Digital Kit</h3>
+                        <p>Digital versions of our kits for gaming and design</p>
+                        <a href="#" class="btn btn-outline">Download Kit</a>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Vifaa vya Kidijitali</h3>
+                        <p>Toleo la dijitali la vifaa vyetu kwa michezo ya kubahatisha na kubuni</p>
+                        <a href="#" class="btn btn-outline">Pakua Vifaa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAN CLUBS -->
+    <section class="features" style="padding: 100px 0; background: var(--light);">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Official Fan Clubs</h2>
+                    <p>Join one of our official supporter groups</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Vikundi vya Mashabiki</h2>
+                    <p>Jiunge na moja ya vikundi vyetu rasmi vya wafuasi</p>
+                </div>
+            </div>
+
+            <div class="fanclubs-grid">
+                <div class="fanclub-card">
+                    <div class="fanclub-logo">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Kinondoni Lions</h3>
+                        <p>Main supporters group based in Kinondoni municipality</p>
+                        <p class="fanclub-members">1,500+ Members</p>
+                        <a href="#" class="btn btn-outline">Join Group</a>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Simba wa Kinondoni</h3>
+                        <p>Kikundi kikuu cha wafuasi kilichoko manispaa ya Kinondoni</p>
+                        <p class="fanclub-members">Wanachama 1,500+</p>
+                        <a href="#" class="btn btn-outline">Jiunge na Kikundi</a>
+                    </div>
+                </div>
+
+                <div class="fanclub-card">
+                    <div class="fanclub-logo">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>KMC Diaspora</h3>
+                        <p>International supporters group for fans abroad</p>
+                        <p class="fanclub-members">800+ Members</p>
+                        <a href="#" class="btn btn-outline">Join Group</a>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>KMC Diaspora</h3>
+                        <p>Kikundi cha wafuasi wa kimataifa kwa mashabiki wa ng'ambo</p>
+                        <p class="fanclub-members">Wanachama 800+</p>
+                        <a href="#" class="btn btn-outline">Jiunge na Kikundi</a>
+                    </div>
+                </div>
+
+                <div class="fanclub-card">
+                    <div class="fanclub-logo">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Young Supporters</h3>
+                        <p>Fan club for young supporters under 18 years</p>
+                        <p class="fanclub-members">600+ Members</p>
+                        <a href="#" class="btn btn-outline">Join Group</a>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Wafuasi Wachanga</h3>
+                        <p>Klabu ya mashabiki kwa wafuasi wachanga chini ya miaka 18</p>
+                        <p class="fanclub-members">Wanachama 600+</p>
+                        <a href="#" class="btn btn-outline">Jiunge na Kikundi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAN OF THE MONTH -->
+    <section class="upcoming-match" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d);">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Fan of the Month</h2>
+                    <p>Celebrating our most passionate supporters</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Mshabiki wa Mwezi</h2>
+                    <p>Kusherehekea wafuasi wetu wenye shauku zaidi</p>
+                </div>
+            </div>
+
+            <div class="fan-of-month">
+                <div class="fan-photo">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="fan-info">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Juma Hassan</h3>
+                        <p class="fan-title">June 2024 - Fan of the Month</p>
+                        <p>Juma has been a KMC FC supporter since 2016 and hasn't missed a single home game in the last two seasons. He travels from Arusha for every match and organizes fan buses for other supporters.</p>
+                        <div class="fan-stats">
+                            <div class="stat">
+                                <div class="stat-number">45</div>
+                                <div class="stat-label">Matches Attended</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">8</div>
+                                <div class="stat-label">Years Supporting</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Juma Hassan</h3>
+                        <p class="fan-title">Juni 2024 - Mshabiki wa Mwezi</p>
+                        <p>Juma amekuwa mfuasi wa KMC FC tangu 2016 na hajamkosa mechi moja ya nyumbani katika misimu miwili iliyopita. Anasafiri kutoka Arusha kwa kila mechi na anapanga mabasi ya mashabiki kwa wafuasi wengine.</p>
+                        <div class="fan-stats">
+                            <div class="stat">
+                                <div class="stat-number">45</div>
+                                <div class="stat-label">Mechi Zilizohudhuriwa</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">8</div>
+                                <div class="stat-label">Miaka ya Kutoa Msaada</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STADIUM GUIDE -->
+    <section class="features" style="padding: 100px 0;">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Stadium Guide</h2>
+                    <p>Everything you need to know about visiting Kinondoni Municipal Stadium</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Mwongozo wa Uwanja</h2>
+                    <p>Kila unachohitaji kujua kuhusu kutembelea Uwanja wa Manispaa wa Kinondoni</p>
+                </div>
+            </div>
+
+            <div class="stadium-guide">
+                <div class="guide-section">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3><i class="fas fa-map-signs"></i> Getting There</h3>
+                        <p>The stadium is easily accessible by public transport from all parts of Dar es Salaam. Use daladala (minibus) routes heading to Kinondoni.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3><i class="fas fa-map-signs"></i> Kufika Huko</h3>
+                        <p>Uwanja unapatikana kwa urahisi kwa usafiri wa umma kutoka sehemu zote za Dar es Salaam. Tumia njia za daladala zinazoelekea Kinondoni.</p>
+                    </div>
+                </div>
+
+                <div class="guide-section">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3><i class="fas fa-parking"></i> Parking</h3>
+                        <p>Limited parking available at the stadium. We recommend using public transport or arriving early for parking spots.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3><i class="fas fa-parking"></i> Maegesho</h3>
+                        <p>Maegesho ya kikomo yanapatikana uwanjani. Tunapendekeza kutumia usafiri wa umma au kufika mapema kwa nafasi za maegesho.</p>
+                    </div>
+                </div>
+
+                <div class="guide-section">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3><i class="fas fa-utensils"></i> Food & Drink</h3>
+                        <p>Multiple food and beverage stalls available inside the stadium. Outside food and drinks are not permitted.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3><i class="fas fa-utensils"></i> Chakula na Vinywaji</h3>
+                        <p>Maduka mengi ya chakula na vinywaji yanapatikana ndani ya uwanja. Chakula na vinywaji vya nje haviruhusiwi.</p>
+                    </div>
+                </div>
+
+                <div class="guide-section">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3><i class="fas fa-shield-alt"></i> Safety & Security</h3>
+                        <p>Security personnel present throughout the stadium. Report any concerns to nearest security officer or stadium staff.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3><i class="fas fa-shield-alt"></i> Usalama</h3>
+                        <p>Watu wa usalama wako katika uwanja wote. Ripoti wasiwasi wowote kwa afisa wa usalama au wafanyikazi wa uwanja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo Column -->
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>KMC <span>FC</span></h1>
+                            <p>Kinondoni Municipal Council FC</p>
+                        </div>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <p style="margin-top: 15px;">Representing Kinondoni with pride and passion in the Tanzanian Premier League.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <p style="margin-top: 15px;">Tunawakilisha Kinondoni kwa fahari na shauku katika Ligi Kuu ya Tanzania.</p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Viungo vya Haraka</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Home</span><span class="content-sw">Nyumbani</span></a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span class="content-en">About Club</span><span class="content-sw">Kuhusu Klabu</span></a></li>
+                        <li><a href="team.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Team Players</span><span class="content-sw">Wachezaji</span></a></li>
+                        <li><a href="fixtures.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Fixtures</span><span class="content-sw">Ratiba</span></a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Latest News</span><span class="content-sw">Habari Mpya</span></a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Contact Us</span><span class="content-sw">Wasiliana Nasi</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Contact Info</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Mawasiliano</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 
+                            <span class="content-en">Kinondoni Municipal Stadium</span>
+                            <span class="content-sw">Uwanja wa Manispaa wa Kinondoni</span>
+                        </li>
+                        <li><i class="fas fa-phone"></i> +255 22 277 4000</li>
+                        <li><i class="fas fa-envelope"></i> info@kmcfc.co.tz</li>
+                        <li><i class="fas fa-clock"></i> 
+                            <span class="content-en">Mon-Fri: 9:00 AM - 5:00 PM</span>
+                            <span class="content-sw">Jum-Ijum: 9:00 asubuhi - 5:00 jioni</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <!-- English -->
+                <div class="content-en">
+                    <p>&copy; 2024 KMC Football Club. All Rights Reserved. | Designed by <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <p>&copy; 2024 Klabu ya Mpira ya KMC. Haki zote zimehifadhiwa. | Imebuniwa na <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADDITIONAL STYLES FOR FANS PAGE -->
+    <style>
+        .membership-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        
+        .benefits-list {
+            margin: 30px 0;
+        }
+        
+        .benefit {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .benefit i {
+            font-size: 1.8rem;
+            color: var(--orange);
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        
+        .benefit h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .benefit p {
+            color: var(--dark-gray);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        .membership-form-container {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-lg);
+            position: sticky;
+            top: 100px;
+        }
+        
+        .membership-form h3 {
+            margin-bottom: 10px;
+        }
+        
+        .membership-form > p {
+            color: var(--dark-gray);
+            margin-bottom: 25px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid var(--gray);
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--orange);
+            box-shadow: 0 0 0 3px rgba(255,102,0,0.2);
+        }
+        
+        .membership-form .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .membership-price {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light);
+        }
+        
+        .membership-price .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--orange);
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        
+        .membership-price .price span {
+            font-size: 1rem;
+            color: var(--dark-gray);
+        }
+        
+        .price-note {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .download-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: var(--transition);
+        }
+        
+        .download-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--orange);
+            box-shadow: var(--shadow-lg);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .download-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--orange);
+        }
+        
+        .download-card h3 {
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+        
+        .download-card p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .download-card .btn-outline {
+            border-color: rgba(255,255,255,0.3);
+            color: var(--white);
+        }
+        
+        .download-card .btn-outline:hover {
+            border-color: var(--orange);
+            background: var(--orange);
+        }
+        
+        .fanclubs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .fanclub-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .fanclub-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .fanclub-logo {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-orange-blue);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+        }
+        
+        .fanclub-card h3 {
+            margin-bottom: 10px;
+        }
+        
+        .fanclub-card p {
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+        }
+        
+        .fanclub-members {
+            color: var(--orange);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .fan-of-month {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            margin-top: 50px;
+            align-items: center;
+        }
+        
+        .fan-photo {
+            width: 200px;
+            height: 200px;
+            background: var(--gradient-orange-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 4rem;
+            margin: 0 auto;
+        }
+        
+        .fan-info h3 {
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+        
+        .fan-title {
+            color: var(--orange);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .fan-info p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        
+        .fan-stats {
+            display: flex;
+            gap: 40px;
+        }
+        
+        .fan-stats .stat {
+            text-align: center;
+        }
+        
+        .fan-stats .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--orange);
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        
+        .fan-stats .stat-label {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        
+        .stadium-guide {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .guide-section {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 25px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .guide-section:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .guide-section h3 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .guide-section h3 i {
+            color: var(--orange);
+            font-size: 1.5rem;
+        }
+        
+        .guide-section p {
+            color: var(--dark-gray);
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 992px) {
+            .membership-section {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .membership-form-container {
+                position: static;
+            }
+            
+            .fan-of-month {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .downloads-grid,
+            .fanclubs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stadium-guide {
+                grid-template-columns: 1fr;
+            }
+            
+            .fan-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Language Switcher
+        function switchLanguage(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(lang.toUpperCase()));
+            });
+            
+            // Switch content
+            if (lang === 'en') {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'none');
+                document.title = "KMC FC - Fans Zone [EN]";
+            } else {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'block');
+                document.title = "KMC FC - Eneo la Mashabiki [SW]";
+            }
+            
+            // Save preference
+            localStorage.setItem('kmc_lang', lang);
+        }
+
+        // Membership Form
+        document.getElementById('membershipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const currentLang = localStorage.getItem('kmc_lang') || 'en';
+            
+            if (currentLang === 'en') {
+                alert('Thank you for applying for membership! We will contact you soon with further details.');
+            } else {
+                alert('Asante kwa kujitolea kwa uanachama! Tutawasiliana nawe hivi karibuni kwa maelezo zaidi.');
+            }
+            
+            this.reset();
+        });
+
+        // Download Buttons
+        document.querySelectorAll('.download-card .btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const currentLang = localStorage.getItem('kmc_lang') || 'en';
+                
+                if (currentLang === 'en') {
+                    alert('Download starting...');
+                } else {
+                    alert('Kupakua kunaanza...');
+                }
+            });
+        });
+
+        // Fan Club Join Buttons
+        document.querySelectorAll('.fanclub-card .btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const currentLang = localStorage.getItem('kmc_lang') || 'en';
+                
+                if (currentLang === 'en') {
+                    alert('Joining fan club...');
+                } else {
+                    alert('Inajiunga na kikundi cha mashabiki...');
+                }
+            });
+        });
+
+        // Mobile Menu
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.innerHTML = this.innerHTML.includes('bars') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mainNav');
+            const btn = document.getElementById('mobileMenuBtn');
+            if (!nav.contains(e.target) && !btn.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                btn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // Load saved language
+        const savedLang = localStorage.getItem('kmc_lang') || 'en';
+        if (savedLang) {
+            switchLanguage(savedLang);
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.main-header');
+            if (window.scrollY > 100) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.padding = '20px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
