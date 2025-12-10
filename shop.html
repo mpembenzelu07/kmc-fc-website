@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMC FC - Official Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>KMC <span>FC</span></h1>
+                        <p>Kinondoni Municipal Council FC</p>
+                    </div>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="team.html"><i class="fas fa-users"></i> Team</a>
+                    <a href="fixtures.html"><i class="fas fa-calendar-alt"></i> Fixtures</a>
+                    <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                    <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="fans.html"><i class="fas fa-heart"></i> Fans</a>
+                    <a href="shop.html" class="active"><i class="fas fa-shopping-cart"></i> Shop</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                </nav>
+
+                <!-- Language & Mobile Menu -->
+                <div class="header-right">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="switchLanguage('sw')">SW</button>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHOP HERO -->
+    <section class="hero" style="min-height: 70vh; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070');">
+        <div class="container">
+            <div class="hero-content">
+                <!-- English -->
+                <div class="content-en">
+                    <h1>Official <span>Store</span></h1>
+                    <p>Show your support with authentic KMC FC merchandise and apparel</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h1>Duka <span>Rasmi</span></h1>
+                    <p>Onyesha usaidizi wako kwa bidhaa za kweli za KMC FC na mavazi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP FILTER -->
+    <section class="features" style="padding: 50px 0 0;">
+        <div class="container">
+            <div class="shop-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="content-en">All Products</span>
+                    <span class="content-sw">Bidhaa Zote</span>
+                </button>
+                <button class="filter-btn" data-filter="jerseys">
+                    <span class="content-en">Jerseys</span>
+                    <span class="content-sw">Jezi</span>
+                </button>
+                <button class="filter-btn" data-filter="apparel">
+                    <span class="content-en">Apparel</span>
+                    <span class="content-sw">Mavazi</span>
+                </button>
+                <button class="filter-btn" data-filter="accessories">
+                    <span class="content-en">Accessories</span>
+                    <span class="content-sw">Vifaa</span>
+                </button>
+                <button class="filter-btn" data-filter="sale">
+                    <span class="sale-badge">SALE</span>
+                    <span class="content-en">Sale Items</span>
+                    <span class="content-sw">Bidhaa za Punguzo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP PRODUCTS -->
+    <section class="features" style="padding: 50px 0 100px;">
+        <div class="container">
+            <div class="shop-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="jerseys">
+                    <div class="product-image">
+                        <div class="product-badge new">NEW</div>
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Home Jersey 2024</h3>
+                            <p>Official home kit for the 2023/24 season</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 45,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Jezi ya Nyumbani 2024</h3>
+                            <p>Jezi rasmi ya nyumbani kwa msimu wa 2023/24</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 45,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="jerseys">
+                    <div class="product-image">
+                        <div class="product-badge new">NEW</div>
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Away Jersey 2024</h3>
+                            <p>Official away kit for the 2023/24 season</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 45,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Jezi ya Wageni 2024</h3>
+                            <p>Jezi rasmi ya wageni kwa msimu wa 2023/24</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 45,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="apparel">
+                    <div class="product-image">
+                        <div class="product-badge sale">SALE</div>
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Training Jacket</h3>
+                            <p>Official training jacket for cold weather</p>
+                            <div class="product-price">
+                                <span class="old-price">TZS 60,000</span>
+                                <span class="current-price">TZS 42,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Koti la Mafunzo</h3>
+                            <p>Koti rasmi la mafunzo kwa hali ya hewa baridi</p>
+                            <div class="product-price">
+                                <span class="old-price">TZS 60,000</span>
+                                <span class="current-price">TZS 42,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Scarf & Beanie Set</h3>
+                            <p>Winter accessories set in club colors</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 25,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Seti ya Skafu na Beanie</h3>
+                            <p>Seti ya vifaa vya msimu wa baridi katika rangi za klabu</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 25,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="apparel">
+                    <div class="product-image">
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Polo Shirt</h3>
+                            <p>Smart casual polo shirt with club logo</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 35,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Shati la Polo</h3>
+                            <p>Shati la polo la kawaida lenye nembo ya klabu</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 35,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <div class="product-badge new">NEW</div>
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Official Football</h3>
+                            <p>Match-quality football with club branding</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 30,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Mpira Rasmi</h3>
+                            <p>Mpira wa ubora wa mechi wenye chapa ya klabu</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 30,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="sale">
+                    <div class="product-image">
+                        <div class="product-badge sale">30% OFF</div>
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Classic Jersey</h3>
+                            <p>Retro jersey from 2018 season</p>
+                            <div class="product-price">
+                                <span class="old-price">TZS 40,000</span>
+                                <span class="current-price">TZS 28,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Jezi ya Classic</h3>
+                            <p>Jezi ya retro kutoka msimu wa 2018</p>
+                            <div class="product-price">
+                                <span class="old-price">TZS 40,000</span>
+                                <span class="current-price">TZS 28,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <div class="quick-view">
+                            <i class="fas fa-eye"></i>
+                            <span class="content-en">Quick View</span>
+                            <span class="content-sw">Mtazamo wa Haraka</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h3>Water Bottle</h3>
+                            <p>Insulated water bottle with club logo</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 15,000</span>
+                            </div>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h3>Chupa ya Maji</h3>
+                            <p>Chupa ya maji yenye maboksi na nembo ya klabu</p>
+                            <div class="product-price">
+                                <span class="current-price">TZS 15,000</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="content-en">Add to Cart</span>
+                            <span class="content-sw">Ongeza kwa Cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center" style="margin-top: 50px;">
+                <button class="btn btn-outline" id="loadMoreProducts">
+                    <span class="content-en">Load More Products</span>
+                    <span class="content-sw">Pakia Bidhaa Zaidi</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCT -->
+    <section class="upcoming-match" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d);">
+        <div class="container">
+            <div class="featured-product-section">
+                <div class="featured-product-image">
+                    <div class="featured-badge">FEATURED</div>
+                </div>
+                <div class="featured-product-info">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h2>2024 Home Jersey</h2>
+                        <p class="product-subtitle">Official Match Jersey</p>
+                        <div class="product-description">
+                            <p>Experience ultimate comfort and style with our official 2024 home jersey. Made from premium moisture-wicking fabric, this jersey keeps you cool and dry during intense matches.</p>
+                            <ul>
+                                <li>100% Polyester moisture-wicking fabric</li>
+                                <li>Vented mesh panels for breathability</li>
+                                <li>Official club badge and sponsor logos</li>
+                                <li>Available in sizes S to XXL</li>
+                            </ul>
+                        </div>
+                        <div class="product-price-featured">
+                            <div class="price">TZS 45,000</div>
+                            <div class="shipping">Free shipping on orders over TZS 100,000</div>
+                        </div>
+                        <div class="product-actions">
+                            <select class="size-selector">
+                                <option value="">Select Size</option>
+                                <option value="s">Small (S)</option>
+                                <option value="m">Medium (M)</option>
+                                <option value="l">Large (L)</option>
+                                <option value="xl">X-Large (XL)</option>
+                                <option value="xxl">XX-Large (XXL)</option>
+                            </select>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h2>Jezi ya Nyumbani 2024</h2>
+                        <p class="product-subtitle">Jezi Rasmi ya Mechi</p>
+                        <div class="product-description">
+                            <p>Pata starehe ya hali ya juu na mtindo na jezi yetu rasmi ya nyumbani ya 2024. Iliyotengenezwa kutoka kwa kitambaa cha hali ya juu kinachonyonya unyevu, jezi hii inakuhakikishia kupoa na kukauka wakati wa mechi kali.</p>
+                            <ul>
+                                <li>Kitambaa 100% cha Polyester kinachonyonya unyevu</li>
+                                <li>Panel za mesh zilizopenywa kwa uingizaji hewa</li>
+                                <li>Beji rasmi ya klabu na nembo za wadhamini</li>
+                                <li>Inapatikana katika saizi S hadi XXL</li>
+                            </ul>
+                        </div>
+                        <div class="product-price-featured">
+                            <div class="price">TZS 45,000</div>
+                            <div class="shipping">Usafirishaji bure kwa maagizo zaidi ya TZS 100,000</div>
+                        </div>
+                        <div class="product-actions">
+                            <select class="size-selector">
+                                <option value="">Chagua Ukubwa</option>
+                                <option value="s">Ndogo (S)</option>
+                                <option value="m">Kati (M)</option>
+                                <option value="l">Kubwa (L)</option>
+                                <option value="xl">X-Kubwa (XL)</option>
+                                <option value="xxl">XX-Kubwa (XXL)</option>
+                            </select>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-shopping-cart"></i>
+                                Ongeza kwa Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHIPPING & RETURNS -->
+    <section class="features" style="padding: 100px 0; background: var(--light);">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Shipping & Returns</h2>
+                    <p>Everything you need to know about ordering from our store</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Usafirishaji na Marejesho</h2>
+                    <p>Kila unachohitaji kujua kuhusu kuagiza kutoka kwa duka letu</p>
+                </div>
+            </div>
+
+            <div class="shipping-grid">
+                <div class="shipping-info">
+                    <div class="shipping-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Fast Delivery</h3>
+                        <p>Orders processed within 24 hours. Delivery within Dar es Salaam: 2-3 business days. Other regions: 5-7 business days.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Uwasilishaji wa Haraka</h3>
+                        <p>Maagizo yanashughulikiwa ndani ya masaa 24. Uwasilishaji ndani ya Dar es Salaam: Siku 2-3 za kazi. Mikoa mingine: Siku 5-7 za kazi.</p>
+                    </div>
+                </div>
+
+                <div class="shipping-info">
+                    <div class="shipping-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Easy Returns</h3>
+                        <p>30-day return policy for unused items with original tags. Free returns for defective products.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Marejesho Rahisi</h3>
+                        <p>Sera ya siku 30 ya kurudisha kwa bidhaa zisizotumika zenye lebo asili. Marejesho ya bure kwa bidhaa zenye kasoro.</p>
+                    </div>
+                </div>
+
+                <div class="shipping-info">
+                    <div class="shipping-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Secure Payment</h3>
+                        <p>All payments processed securely through Tigo Pesa, M-Pesa, and credit/debit cards.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Malipo Salama</h3>
+                        <p>Malipo yote yanashughulikiwa kwa usalama kupitia Tigo Pesa, M-Pesa, na kadi za mkopo/debit.</p>
+                    </div>
+                </div>
+
+                <div class="shipping-info">
+                    <div class="shipping-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Customer Support</h3>
+                        <p>Our support team is available Monday to Saturday from 8:00 AM to 6:00 PM.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Usaidizi wa Wateja</h3>
+                        <p>Timu yetu ya usaidizi inapatikana Jumatatu hadi Jumamosi kutoka 8:00 asubuhi hadi 6:00 jioni.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIZE GUIDE -->
+    <section class="upcoming-match" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d); padding: 100px 0;">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Size Guide</h2>
+                    <p>Find your perfect fit with our size chart</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Mwongozo wa Ukubwa</h2>
+                    <p>Tafuta ukubwa wako kamili na chati yetu ya saizi</p>
+                </div>
+            </div>
+
+            <div class="size-guide-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>
+                                <span class="content-en">Chest (cm)</span>
+                                <span class="content-sw">Kifua (cm)</span>
+                            </th>
+                            <th>
+                                <span class="content-en">Length (cm)</span>
+                                <span class="content-sw">Urefu (cm)</span>
+                            </th>
+                            <th>
+                                <span class="content-en">Waist (cm)</span>
+                                <span class="content-sw">Kiuno (cm)</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S</td>
+                            <td>86-91</td>
+                            <td>68-70</td>
+                            <td>71-76</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>91-97</td>
+                            <td>71-73</td>
+                            <td>76-81</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>97-102</td>
+                            <td>74-76</td>
+                            <td>81-86</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>102-107</td>
+                            <td>77-79</td>
+                            <td>86-91</td>
+                        </tr>
+                        <tr>
+                            <td>XXL</td>
+                            <td>107-112</td>
+                            <td>80-82</td>
+                            <td>91-97</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="size-tips">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Tips for Best Fit:</h3>
+                        <ul>
+                            <li>Measure your chest at the fullest part</li>
+                            <li>For jerseys, we recommend going one size up for a looser fit</li>
+                            <li>All measurements are in centimeters</li>
+                            <li>If between sizes, choose the larger size</li>
+                        </ul>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Vidokezo vya Ukubwa Bora:</h3>
+                        <ul>
+                            <li>Pima kifua chako kwenye sehemu kamili zaidi</li>
+                            <li>Kwa jezi, tunapendekeza kuchukua ukubwa mmoja zaidi kwa umbo la huru</li>
+                            <li>Vipimo vyote viko kwenye sentimita</li>
+                            <li>Ikiwa kati ya saizi, chagua saizi kubwa zaidi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHYSICAL STORE -->
+    <section class="features" style="padding: 100px 0;">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>Visit Our Physical Store</h2>
+                    <p>Experience our merchandise in person at our official store</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Tembelea Duka Letu la Kimwili</h2>
+                    <p>Pata uzoefu wa bidhaa zetu mwenyewe katika duka letu rasmi</p>
+                </div>
+            </div>
+
+            <div class="store-location">
+                <div class="store-info">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>KMC FC Official Store</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Kinondoni Municipal Stadium, Gate 3</p>
+                        <p><i class="fas fa-clock"></i> Open Daily: 9:00 AM - 7:00 PM</p>
+                        <p><i class="fas fa-phone"></i> Store Phone: +255 22 277 4001</p>
+                        
+                        <div class="store-features">
+                            <h4>Store Features:</h4>
+                            <ul>
+                                <li>Try before you buy</li>
+                                <li>Expert fitting advice</li>
+                                <li>Exclusive in-store promotions</li>
+                                <li>Player autograph sessions</li>
+                                <li>Match day specials</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Duka Rasmi la KMC FC</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Uwanja wa Manispaa wa Kinondoni, Lango 3</p>
+                        <p><i class="fas fa-clock"></i> Imefunguliwa Kila Siku: 9:00 asubuhi - 7:00 jioni</p>
+                        <p><i class="fas fa-phone"></i> Simu ya Duka: +255 22 277 4001</p>
+                        
+                        <div class="store-features">
+                            <h4>Vipengele vya Duka:</h4>
+                            <ul>
+                                <li>Jaribu kabla ya kununua</li>
+                                <li>Ushauri wa kitaaluma wa kufaa</li>
+                                <li>Promotions za kipekee za dukani</li>
+                                <li>Vipindi vya sahihi ya wachezaji</li>
+                                <li>Maalum ya siku ya mechi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="store-map">
+                    <div class="store-map-placeholder">
+                        <i class="fas fa-store"></i>
+                        <!-- English -->
+                        <div class="content-en">
+                            <p>Store Location Map</p>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <p>Ramani ya Eneo la Duka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo Column -->
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>KMC <span>FC</span></h1>
+                            <p>Kinondoni Municipal Council FC</p>
+                        </div>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <p style="margin-top: 15px;">Representing Kinondoni with pride and passion in the Tanzanian Premier League.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <p style="margin-top: 15px;">Tunawakilisha Kinondoni kwa fahari na shauku katika Ligi Kuu ya Tanzania.</p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Viungo vya Haraka</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Home</span><span class="content-sw">Nyumbani</span></a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span class="content-en">About Club</span><span class="content-sw">Kuhusu Klabu</span></a></li>
+                        <li><a href="team.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Team Players</span><span class="content-sw">Wachezaji</span></a></li>
+                        <li><a href="fixtures.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Fixtures</span><span class="content-sw">Ratiba</span></a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Latest News</span><span class="content-sw">Habari Mpya</span></a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Contact Us</span><span class="content-sw">Wasiliana Nasi</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Contact Info</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Mawasiliano</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 
+                            <span class="content-en">Kinondoni Municipal Stadium</span>
+                            <span class="content-sw">Uwanja wa Manispaa wa Kinondoni</span>
+                        </li>
+                        <li><i class="fas fa-phone"></i> +255 22 277 4000</li>
+                        <li><i class="fas fa-envelope"></i> info@kmcfc.co.tz</li>
+                        <li><i class="fas fa-clock"></i> 
+                            <span class="content-en">Mon-Fri: 9:00 AM - 5:00 PM</span>
+                            <span class="content-sw">Jum-Ijum: 9:00 asubuhi - 5:00 jioni</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <!-- English -->
+                <div class="content-en">
+                    <p>&copy; 2024 KMC Football Club. All Rights Reserved. | Designed by <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <p>&copy; 2024 Klabu ya Mpira ya KMC. Haki zote zimehifadhiwa. | Imebuniwa na <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADDITIONAL STYLES FOR SHOP PAGE -->
+    <style>
+        .shop-filter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .shop-filter .filter-btn {
+            padding: 12px 25px;
+            background: var(--white);
+            border: 2px solid var(--gray);
+            border-radius: var(--border-radius);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .shop-filter .filter-btn.active {
+            background: var(--gradient-orange-blue);
+            color: var(--white);
+            border-color: var(--orange);
+            box-shadow: var(--shadow-orange);
+        }
+        
+        .shop-filter .filter-btn:hover:not(.active) {
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+        
+        .sale-badge {
+            background: var(--danger);
+            color: var(--white);
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+        
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .product-image {
+            height: 250px;
+            background: var(--gradient-orange-blue);
+            position: relative;
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--white);
+        }
+        
+        .product-badge.new {
+            background: var(--success);
+        }
+        
+        .product-badge.sale {
+            background: var(--danger);
+        }
+        
+        .quick-view {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.8);
+            color: var(--white);
+            padding: 10px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: var(--transition);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .product-card:hover .quick-view {
+            transform: translateY(0);
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .product-info p {
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .product-price {
+            margin-bottom: 15px;
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            color: var(--gray);
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .current-price {
+            color: var(--orange);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .add-to-cart {
+            width: 100%;
+            padding: 12px;
+            background: var(--orange);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .add-to-cart:hover {
+            background: var(--blue);
+        }
+        
+        .featured-product-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .featured-product-image {
+            height: 500px;
+            background: var(--gradient-orange-blue);
+            border-radius: var(--border-radius-lg);
+            position: relative;
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--orange);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        
+        .featured-product-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .product-subtitle {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .product-description {
+            margin-bottom: 30px;
+        }
+        
+        .product-description p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .product-description ul {
+            color: rgba(255,255,255,0.8);
+            padding-left: 20px;
+        }
+        
+        .product-description li {
+            margin-bottom: 8px;
+        }
+        
+        .product-price-featured {
+            margin-bottom: 30px;
+        }
+        
+        .product-price-featured .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--orange);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        
+        .shipping {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        
+        .product-actions {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 15px;
+        }
+        
+        .size-selector {
+            padding: 12px 15px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: var(--border-radius);
+            background: transparent;
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+        
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.1);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .quantity-btn {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: var(--white);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .quantity-btn:hover {
+            background: var(--orange);
+        }
+        
+        .quantity {
+            width: 40px;
+            text-align: center;
+            color: var(--white);
+            font-weight: 600;
+        }
+        
+        .product-actions .btn {
+            padding: 12px 20px;
+        }
+        
+        .shipping-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .shipping-info {
+            text-align: center;
+        }
+        
+        .shipping-icon {
+            font-size: 3rem;
+            color: var(--orange);
+            margin-bottom: 20px;
+        }
+        
+        .shipping-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .shipping-info p {
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+        
+        .size-guide-table {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .size-guide-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255,255,255,0.1);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .size-guide-table th {
+            background: var(--gradient-orange-blue);
+            color: var(--white);
+            padding: 15px;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .size-guide-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .size-tips {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: var(--border-radius);
+        }
+        
+        .size-tips h3 {
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+        
+        .size-tips ul {
+            color: rgba(255,255,255,0.8);
+            padding-left: 20px;
+        }
+        
+        .size-tips li {
+            margin-bottom: 10px;
+        }
+        
+        .store-location {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 50px;
+            align-items: center;
+        }
+        
+        .store-info h3 {
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .store-info p {
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .store-info i {
+            color: var(--orange);
+            width: 20px;
+        }
+        
+        .store-features {
+            margin-top: 30px;
+        }
+        
+        .store-features h4 {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .store-features ul {
+            color: var(--dark-gray);
+            padding-left: 20px;
+        }
+        
+        .store-features li {
+            margin-bottom: 10px;
+        }
+        
+        .store-map-placeholder {
+            height: 300px;
+            background: var(--gradient-orange-blue);
+            border-radius: var(--border-radius-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+        }
+        
+        .store-map-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 992px) {
+            .featured-product-section {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .featured-product-image {
+                height: 300px;
+            }
+            
+            .product-actions {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .store-location {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .shop-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .shipping-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Language Switcher
+        function switchLanguage(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(lang.toUpperCase()));
+            });
+            
+            // Switch content
+            if (lang === 'en') {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'none');
+                document.title = "KMC FC - Official Store [EN]";
+            } else {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'block');
+                document.title = "KMC FC - Duka Rasmi [SW]";
+            }
+            
+            // Save preference
+            localStorage.setItem('kmc_lang', lang);
+        }
+
+        // Shop Filter
+        document.querySelectorAll('.shop-filter .filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.shop-filter .filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Filter products
+                const filter = this.dataset.filter;
+                const products = document.querySelectorAll('.product-card');
+                
+                products.forEach(product => {
+                    if (filter === 'all') {
+                        product.style.display = 'block';
+                    } else {
+                        if (product.dataset.category === filter) {
+                            product.style.display = 'block';
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Quick View
+        document.querySelectorAll('.quick-view').forEach(button => {
+            button.addEventListener('click', function() {
+                const currentLang = localStorage.getItem('kmc_lang') || 'en';
+                if (currentLang === 'en') {
+                    alert('Quick view feature would show product details here');
+                } else {
+                    alert('Kipengele cha mtazamo wa haraka kingeonyesha maelezo ya bidhaa hapa');
+                }
+            });
+        });
+
+        // Add to Cart
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const currentLang = localStorage.getItem('kmc_lang') || 'en';
+                if (currentLang === 'en') {
+                    alert('Product added to cart!');
+                } else {
+                    alert('Bidhaa imeongezwa kwenye cart!');
+                }
+            });
+        });
+
+        // Quantity Selector
+        document.querySelectorAll('.quantity-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const parent = this.parentElement;
+                const quantitySpan = parent.querySelector('.quantity');
+                let quantity = parseInt(quantitySpan.textContent);
+                
+                if (this.classList.contains('minus') && quantity > 1) {
+                    quantity--;
+                } else if (this.classList.contains('plus')) {
+                    quantity++;
+                }
+                
+                quantitySpan.textContent = quantity;
+            });
+        });
+
+        // Load More Products
+        document.getElementById('loadMoreProducts').addEventListener('click', function() {
+            const currentLang = localStorage.getItem('kmc_lang') || 'en';
+            if (currentLang === 'en') {
+                alert('Loading more products...');
+            } else {
+                alert('Inapakia bidhaa zaidi...');
+            }
+        });
+
+        // Mobile Menu
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.innerHTML = this.innerHTML.includes('bars') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mainNav');
+            const btn = document.getElementById('mobileMenuBtn');
+            if (!nav.contains(e.target) && !btn.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                btn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // Load saved language
+        const savedLang = localStorage.getItem('kmc_lang') || 'en';
+        if (savedLang) {
+            switchLanguage(savedLang);
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.main-header');
+            if (window.scrollY > 100) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.padding = '20px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
