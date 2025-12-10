@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMC FC - Latest News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>KMC <span>FC</span></h1>
+                        <p>Kinondoni Municipal Council FC</p>
+                    </div>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="team.html"><i class="fas fa-users"></i> Team</a>
+                    <a href="fixtures.html"><i class="fas fa-calendar-alt"></i> Fixtures</a>
+                    <a href="news.html" class="active"><i class="fas fa-newspaper"></i> News</a>
+                    <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="fans.html"><i class="fas fa-heart"></i> Fans</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                </nav>
+
+                <!-- Language & Mobile Menu -->
+                <div class="header-right">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="switchLanguage('sw')">SW</button>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NEWS HERO -->
+    <section class="hero" style="min-height: 70vh; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=1964');">
+        <div class="container">
+            <div class="hero-content">
+                <!-- English -->
+                <div class="content-en">
+                    <h1>Latest <span>News</span></h1>
+                    <p>Stay updated with all the latest happenings at KMC Football Club</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h1>Habari <span>Mpya</span></h1>
+                    <p>Endelea kupata taarifa kuhusu matukio yote ya hivi karibuni katika Klabu ya Mpira ya KMC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS FILTER -->
+    <section class="features" style="padding: 50px 0 0;">
+        <div class="container">
+            <div class="news-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="content-en">All News</span>
+                    <span class="content-sw">Habari Zote</span>
+                </button>
+                <button class="filter-btn" data-filter="match">
+                    <span class="content-en">Match Reports</span>
+                    <span class="content-sw">Ripoti za Mechi</span>
+                </button>
+                <button class="filter-btn" data-filter="transfer">
+                    <span class="content-en">Transfers</span>
+                    <span class="content-sw">Uhamisho</span>
+                </button>
+                <button class="filter-btn" data-filter="club">
+                    <span class="content-en">Club News</span>
+                    <span class="content-sw">Habari za Klabu</span>
+                </button>
+                <button class="filter-btn" data-filter="community">
+                    <span class="content-en">Community</span>
+                    <span class="content-sw">Jamii</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS GRID -->
+    <section class="features" style="padding: 50px 0 100px;">
+        <div class="container">
+            <div class="news-main-grid">
+                <!-- Featured News (Large) -->
+                <div class="featured-news-card" data-category="match">
+                    <div class="featured-news-image">
+                        <div class="news-category match">Match Report</div>
+                        <div class="news-date">June 10, 2024</div>
+                    </div>
+                    <div class="featured-news-content">
+                        <!-- English -->
+                        <div class="content-en">
+                            <h2>Dramatic Last-Minute Winner Seals Victory Against Coastal Union</h2>
+                            <p>KMC FC secured a thrilling 2-1 victory against Coastal Union with a dramatic last-minute goal from striker Rajabu Athumani. The match saw excellent performances from goalkeeper John Magufuli and midfielder Michael Kambanga.</p>
+                            <a href="#" class="btn btn-primary">Read Full Story</a>
+                        </div>
+                        <!-- Swahili -->
+                        <div class="content-sw">
+                            <h2>Ufungaji wa Dakika ya Mwisho Unatoa Ushindi Dhidi ya Coastal Union</h2>
+                            <p>KMC FC ilipata ushindi mwenye msisimko wa 2-1 dhidi ya Coastal Union kwa bao la dakika ya mwisho kutoka kwa mshambuliaji Rajabu Athumani. Mechi ilionyesha utendaji bora kutoka kwa golikipa John Magufuli na kiungo Michael Kambanga.</p>
+                            <a href="#" class="btn btn-primary">Soma Hadithi Kamili</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Grid -->
+                <div class="news-secondary-grid">
+                    <!-- News 1 -->
+                    <div class="news-card" data-category="transfer">
+                        <div class="news-image">
+                            <div class="news-category transfer">Transfer</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">June 8, 2024</div>
+                            <!-- English -->
+                            <div class="content-en">
+                                <h3>KMC FC Signs Young Talent from Academy</h3>
+                                <p>Promising striker Hassan Mohamed promoted to senior team after impressive academy performances.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                            <!-- Swahili -->
+                            <div class="content-sw">
+                                <h3>KMC FC Yasaini Kipaji Kijana kutoka Akademi</h3>
+                                <p>Mshambuliaji mwenye matumaini Hassan Mohamed ameongezewa kwenye timu kuu baada ya utendaji bora katika akademi.</p>
+                                <a href="#" class="read-more">Soma Zaidi →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News 2 -->
+                    <div class="news-card" data-category="club">
+                        <div class="news-image">
+                            <div class="news-category club">Club News</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">June 5, 2024</div>
+                            <!-- English -->
+                            <div class="content-en">
+                                <h3>New Sponsorship Deal with Bakhresa Group</h3>
+                                <p>Two-year partnership announced, strengthening club's financial foundation and development programs.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                            <!-- Swahili -->
+                            <div class="content-sw">
+                                <h3>Mkataba Mpya wa Udhamini na Bakhresa Group</h3>
+                                <p>Ushirikiano wa miaka miwili umetangazwa, ukithibitisha msingi wa kifedha wa klabu na mipango ya maendeleo.</p>
+                                <a href="#" class="read-more">Soma Zaidi →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News 3 -->
+                    <div class="news-card" data-category="community">
+                        <div class="news-image">
+                            <div class="news-category community">Community</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">June 2, 2024</div>
+                            <!-- English -->
+                            <div class="content-en">
+                                <h3>Community Football Clinic Success</h3>
+                                <p>Over 200 young players attended KMC FC's free football clinic in Kinondoni municipality.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                            <!-- Swahili -->
+                            <div class="content-sw">
+                                <h3>Mafanikio ya Kliniki ya Mpira ya Jamii</h3>
+                                <p>Zaidi ya wachezaji 200 wachanga walihudhuria kliniki ya bure ya mpira ya KMC FC katika manispaa ya Kinondoni.</p>
+                                <a href="#" class="read-more">Soma Zaidi →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News 4 -->
+                    <div class="news-card" data-category="match">
+                        <div class="news-image">
+                            <div class="news-category match">Match Preview</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">May 30, 2024</div>
+                            <!-- English -->
+                            <div class="content-en">
+                                <h3>Match Preview: KMC FC vs Simba SC</h3>
+                                <p>Everything you need to know about our upcoming crucial match against league leaders.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                            <!-- Swahili -->
+                            <div class="content-sw">
+                                <h3>Muhtasari wa Mechi: KMC FC vs Simba SC</h3>
+                                <p>Kila unachohitaji kujua kuhusu mechi yetu muhimu ijayo dhidi ya wakiongozi wa ligi.</p>
+                                <a href="#" class="read-more">Soma Zaidi →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News 5 -->
+                    <div class="news-card" data-category="club">
+                        <div class="news-image">
+                            <div class="news-category club">Infrastructure</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">May 25, 2024</div>
+                            <!-- English -->
+                            <div class="content-en">
+                                <h3>Stadium Upgrade Announcement</h3>
+                                <p>Plans revealed for major stadium improvements including new seating and lighting systems.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                            <!-- Swahili -->
+                            <div class="content-sw">
+                                <h3>Tangazo la Uboreshaji wa Uwanja</h3>
+                                <p>Mipango imefunuliwa kwa uboreshaji mkubwa wa uwanja ikiwa ni pamoja na viti vipya na mifumo ya taa.</p>
+                                <a href="#" class="read-more">Soma Zaidi →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News 6 -->
+                    <div class="news-card" data-category="transfer">
+                        <div class="news-image">
+                            <div class="news-category transfer">Player News</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">May 20, 2024</div>
+                            <!-- English -->
+                            <div class="content-en">
+                                <h3>Captain Magufuli Extends Contract</h3>
+                                <p>Club captain John Magufuli signs new two-year contract extension with KMC FC.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                            <!-- Swahili -->
+                            <div class="content-sw">
+                                <h3>Kapteni Magufuli Anapanua Mkataba</h3>
+                                <p>Kapteni wa klabu John Magufuli amesaini upanuzi mpya wa mkataba wa miaka miwili na KMC FC.</p>
+                                <a href="#" class="read-more">Soma Zaidi →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center" style="margin-top: 50px;">
+                <button class="btn btn-outline" id="loadMoreBtn">
+                    <span class="content-en">Load More News</span>
+                    <span class="content-sw">Pakia Habari Zaidi</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS CATEGORIES -->
+    <section class="upcoming-match" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d);">
+        <div class="container">
+            <div class="text-center">
+                <!-- English -->
+                <div class="content-en">
+                    <h2>News Categories</h2>
+                    <p>Browse news by category</p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <h2>Aina za Habari</h2>
+                    <p>Vinjari habari kwa aina</p>
+                </div>
+            </div>
+
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Match Reports</h3>
+                        <p>Detailed analysis and reports from our matches</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Ripoti za Mechi</h3>
+                        <p>Uchambuzi wa kina na ripoti kutoka kwenye mechi zetu</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Transfers</h3>
+                        <p>Player transfers and contract updates</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Uhamisho</h3>
+                        <p>Uhamisho wa wachezaji na visasisho vya mikataba</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Club News</h3>
+                        <p>Updates about the club and management</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Habari za Klabu</h3>
+                        <p>Visasisho kuhusu klabu na usimamizi</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Community</h3>
+                        <p>Community events and outreach programs</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Jamii</h3>
+                        <p>Matukio ya jamii na programu za kufikia</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBE TO NEWS -->
+    <section class="features" style="padding: 100px 0; background: var(--light);">
+        <div class="container">
+            <div class="subscribe-section">
+                <div class="subscribe-content">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h2>Never Miss an Update</h2>
+                        <p>Subscribe to our newsletter and get all the latest KMC FC news delivered to your inbox</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h2>Usikose Visasisho</h2>
+                        <p>Jiandikishe kwenye jarida letu na upate habari zote za hivi karibuni za KMC FC moja kwa moja kwenye sanduku lako la barua</p>
+                    </div>
+                </div>
+                
+                <div class="subscribe-form">
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="content-en">Subscribe</span>
+                            <span class="content-sw">Jiandikishe</span>
+                        </button>
+                    </form>
+                    <p class="form-note">
+                        <span class="content-en">We respect your privacy. Unsubscribe at any time.</span>
+                        <span class="content-sw">Tunaheshimu faragha yako. Jiondoe wakati wowote.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo Column -->
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>KMC <span>FC</span></h1>
+                            <p>Kinondoni Municipal Council FC</p>
+                        </div>
+                    </div>
+                    <!-- English -->
+                    <div class="content-en">
+                        <p style="margin-top: 15px;">Representing Kinondoni with pride and passion in the Tanzanian Premier League.</p>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <p style="margin-top: 15px;">Tunawakilisha Kinondoni kwa fahari na shauku katika Ligi Kuu ya Tanzania.</p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Viungo vya Haraka</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Home</span><span class="content-sw">Nyumbani</span></a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span class="content-en">About Club</span><span class="content-sw">Kuhusu Klabu</span></a></li>
+                        <li><a href="team.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Team Players</span><span class="content-sw">Wachezaji</span></a></li>
+                        <li><a href="fixtures.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Fixtures</span><span class="content-sw">Ratiba</span></a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Latest News</span><span class="content-sw">Habari Mpya</span></a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span class="content-en">Contact Us</span><span class="content-sw">Wasiliana Nasi</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links">
+                    <!-- English -->
+                    <div class="content-en">
+                        <h3>Contact Info</h3>
+                    </div>
+                    <!-- Swahili -->
+                    <div class="content-sw">
+                        <h3>Mawasiliano</h3>
+                    </div>
+                    
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 
+                            <span class="content-en">Kinondoni Municipal Stadium</span>
+                            <span class="content-sw">Uwanja wa Manispaa wa Kinondoni</span>
+                        </li>
+                        <li><i class="fas fa-phone"></i> +255 22 277 4000</li>
+                        <li><i class="fas fa-envelope"></i> info@kmcfc.co.tz</li>
+                        <li><i class="fas fa-clock"></i> 
+                            <span class="content-en">Mon-Fri: 9:00 AM - 5:00 PM</span>
+                            <span class="content-sw">Jum-Ijum: 9:00 asubuhi - 5:00 jioni</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <!-- English -->
+                <div class="content-en">
+                    <p>&copy; 2024 KMC Football Club. All Rights Reserved. | Designed by <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+                <!-- Swahili -->
+                <div class="content-sw">
+                    <p>&copy; 2024 Klabu ya Mpira ya KMC. Haki zote zimehifadhiwa. | Imebuniwa na <a href="mailto:mpembenzelu@gmail.com">George William Itule</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADDITIONAL STYLES FOR NEWS PAGE -->
+    <style>
+        .news-filter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .news-filter .filter-btn {
+            padding: 12px 25px;
+            background: var(--white);
+            border: 2px solid var(--gray);
+            border-radius: var(--border-radius);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--dark);
+        }
+        
+        .news-filter .filter-btn.active {
+            background: var(--gradient-orange-blue);
+            color: var(--white);
+            border-color: var(--orange);
+            box-shadow: var(--shadow-orange);
+        }
+        
+        .news-filter .filter-btn:hover:not(.active) {
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+        
+        .news-main-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        .featured-news-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+        
+        .featured-news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .featured-news-image {
+            height: 400px;
+            background: var(--gradient-orange-blue);
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+        }
+        
+        .news-category {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--white);
+        }
+        
+        .news-category.match {
+            background: var(--success);
+        }
+        
+        .news-category.transfer {
+            background: var(--info);
+        }
+        
+        .news-category.club {
+            background: var(--warning);
+        }
+        
+        .news-category.community {
+            background: var(--danger);
+        }
+        
+        .news-date {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1.1rem;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+        }
+        
+        .featured-news-content {
+            padding: 40px;
+        }
+        
+        .featured-news-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .featured-news-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: var(--dark-gray);
+        }
+        
+        .news-secondary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .news-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .news-image {
+            height: 200px;
+            background: var(--gradient-orange-blue);
+            position: relative;
+        }
+        
+        .news-content {
+            padding: 25px;
+        }
+        
+        .news-content .news-date {
+            color: var(--orange);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+            background: none;
+            padding: 0;
+        }
+        
+        .news-content h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .news-content p {
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+        }
+        
+        .read-more:hover {
+            gap: 10px;
+            color: var(--blue);
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .category-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: var(--transition);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--orange);
+            box-shadow: var(--shadow-lg);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--orange);
+        }
+        
+        .category-card h3 {
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+        
+        .category-card p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+        }
+        
+        .subscribe-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            background: var(--white);
+            padding: 50px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .subscribe-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .subscribe-form form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .subscribe-form input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid var(--gray);
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .subscribe-form input:focus {
+            outline: none;
+            border-color: var(--orange);
+            box-shadow: 0 0 0 3px rgba(255,102,0,0.2);
+        }
+        
+        .form-note {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin: 0;
+        }
+        
+        @media (max-width: 992px) {
+            .news-secondary-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            
+            .subscribe-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
+            
+            .subscribe-form form {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .featured-news-image {
+                height: 300px;
+            }
+            
+            .featured-news-content h2 {
+                font-size: 1.8rem;
+            }
+            
+            .news-secondary-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Language Switcher
+        function switchLanguage(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(lang.toUpperCase()));
+            });
+            
+            // Switch content
+            if (lang === 'en') {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'none');
+                document.title = "KMC FC - Latest News [EN]";
+            } else {
+                document.querySelectorAll('.content-en').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.content-sw').forEach(el => el.style.display = 'block');
+                document.title = "KMC FC - Habari Mpya [SW]";
+            }
+            
+            // Save preference
+            localStorage.setItem('kmc_lang', lang);
+        }
+
+        // News Filter
+        document.querySelectorAll('.news-filter .filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.news-filter .filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Filter news
+                const filter = this.dataset.filter;
+                const newsCards = document.querySelectorAll('.news-card, .featured-news-card');
+                
+                newsCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        if (card.dataset.category === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Load More Button
+        document.getElementById('loadMoreBtn').addEventListener('click', function() {
+            const currentLang = localStorage.getItem('kmc_lang') || 'en';
+            if (currentLang === 'en') {
+                alert('Loading more news articles...');
+            } else {
+                alert('Inapakia makala zaidi za habari...');
+            }
+        });
+
+        // Newsletter Form
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            const currentLang = localStorage.getItem('kmc_lang') || 'en';
+            
+            if (currentLang === 'en') {
+                alert(`Thank you for subscribing with ${email}! You'll receive our newsletter soon.`);
+            } else {
+                alert(`Asante kwa kujiandikisha kwa ${email}! Utapokea jarida letu hivi karibuni.`);
+            }
+            
+            this.reset();
+        });
+
+        // Mobile Menu
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.innerHTML = this.innerHTML.includes('bars') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mainNav');
+            const btn = document.getElementById('mobileMenuBtn');
+            if (!nav.contains(e.target) && !btn.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                btn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // Load saved language
+        const savedLang = localStorage.getItem('kmc_lang') || 'en';
+        if (savedLang) {
+            switchLanguage(savedLang);
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.main-header');
+            if (window.scrollY > 100) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.padding = '20px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
